@@ -2,7 +2,7 @@
 
 >如何确定某个对象是不是数组 ？
   >1. `value instanceof Array`  一个全局作用域下使用
-  >2. `Array.isArray()`  多个全局作用域下使用（如多个框架）
+  >2. `Array.isArray()`  多个全局作用域下使用（如多个框架,框架指的是`<frame>` 或`<iframe>`框架）
 
 **栈方法** 
 
