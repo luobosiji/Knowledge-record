@@ -63,6 +63,19 @@
      - **重写原型对象**会切断现有原型与任何之前已经存在的对象实例之间的联系
        ![重写原型](https://raw.githubusercontent.com/luobosiji/blog/master/resources/rewriteproto.png)
      - 通过原型可以修改原生对象的原型`String.prototype.newFun = function(){}`
+     -  扩充类型的基础功能
+       ```javascript
+       Function.prototype.method = function(name, func){
+         if(!this.prototype[name]){
+           this.prototype[name] = func
+         }
+         return this
+       }
+       String.method('trim', function(){
+         return this.replace(/^\s+|\s$/g, '')
+       })
+       "  as ".trim()
+       ```
      - 缺点: 对于引用类型值的属性多个实例会修改同一份数据
     ```javascript
      //返回ture 则证明person.__proto__ = Person.prototype
