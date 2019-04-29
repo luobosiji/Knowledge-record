@@ -41,5 +41,5 @@ this.$emit("update:zipCode", e.target.value);
    - 必须在模板中使用
 
 **结论**
->`Object.defineProperty` 是用来响应式更新视图的,和双向绑定没有关系,\
+>`Object.defineProperty`生成的`getter/setter` 是用来响应式更新视图的,和双向绑定没有关系,\
 双向绑定是通过`v-model` 语法糖来实现的,实际上是绑定数据,事件回调来修改数据的 , 修改数据 则触发setter, 通知 watcher
