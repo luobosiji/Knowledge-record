@@ -11,6 +11,8 @@
 8. [组件跨层级通信](https://github.com/luobosiji/blog/blob/master/Vue-record/08-%E7%BB%84%E4%BB%B6%E8%B7%A8%E5%B1%82%E7%BA%A7%E9%80%9A%E4%BF%A1.md)
 9. [组件跨层级获取实例](https://github.com/luobosiji/blog/blob/master/Vue-record/09-%E7%BB%84%E4%BB%B6%E8%B7%A8%E5%B1%82%E7%BA%A7%E8%8E%B7%E5%8F%96%E5%AE%9E%E4%BE%8B.md)
 
+## Vue生态篇
+1. [Vuex](https://github.com/luobosiji/blog/blob/master/Vue-record/10-Vuex-%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.md)
 
   >如果觉得有帮助,欢迎购买
   ![vue-course](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vue-src.jpeg)
