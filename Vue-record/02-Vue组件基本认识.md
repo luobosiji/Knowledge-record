@@ -87,7 +87,7 @@ Vue.component('my-component', {
 ## 插槽
 - 普通插槽
     - slot='xxx' (2.6以下老语法,多个相同名称插槽会合并)
-    - slot='xxx' slot-scope='props'(多个相同名称插槽会替换)
 - 作用域插槽
+    - slot='xxx' slot-scope='props'(多个相同名称插槽会替换)
     - v-slot:xxx='props' (多个相同名称插槽会替换)
     
