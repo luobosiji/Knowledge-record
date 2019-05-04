@@ -13,6 +13,10 @@
 
 ## Vue生态篇
 1. [Vuex](https://github.com/luobosiji/blog/blob/master/Vue-record/10-Vuex-%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.md)
+2. Vue Router
+   1. [基础知识]()
+   2. [进阶]()
+   3. [底层原理]()
 
   >如果觉得有帮助,欢迎购买
   ![vue-course](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vue-src.jpeg)
