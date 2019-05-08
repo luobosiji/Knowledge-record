@@ -3,18 +3,18 @@
 
 **mac下安装工具 homebrew**
 
-- `brew update`   //结果：1Already up-to-date.
-- `brew search nginx`   //查询要安装的软件是否存在
-- `brew info nginx`   //查看nginx信息
+- `brew update`  顺手更新一下 正常结果：1Already up-to-date.
+- `brew search nginx`   查询要安装的软件是否存在
+- `brew info nginx`   查看nginx信息
   ![brew info nginx](https://raw.githubusercontent.com/luobosiji/blog/master/resources/nginx/brew-info-nginx.png)
-- `brew install nginx` //安装命令
+- `brew install nginx` 安装命令
   - `/usr/local/etc/nginx/`
   - `/usr/local/var/www/`
 - `nginx`  启动
 - `nginx -s reload`  修改配置后重新加载生效
 - `nginx -s stop`  :快速停止nginx
 - `nginx -s quit`  ：完整有序的停止nginx
-- `brew uninstall nginx`  //卸载命令
+- `brew uninstall nginx`  卸载命令
 
 **从官网下载**
 
@@ -77,6 +77,7 @@
 ![目录](https://raw.githubusercontent.com/luobosiji/blog/master/resources/nginx/mulu.png)
 
 执行`make` 编译
+
 执行`make install` 安装
 - 会在`objs/`下生成编译文件和二进制文件
 - `objs/src` 编译文件
@@ -97,12 +98,32 @@
 
 **关于Nginx.conf配置**
 - 由指令+指令块构成
+  - http配置的指令块
+    - `http` 表示所有指令都是有http模块解析的
+    - `server` 对应的一个或一组域名
+    - `location` url表达式
+    - `upstream` 上游服务,需要与其它服务交互时使用
 - 每条指令以 `;` 号结尾, 指令与参数 空格分隔
 - 指令块{} 将多条指令组织在一起
 - `include`允许组合多个配置文件, 提升可维护性
 - `#`号添加注释
 - `$` 使用变量
 - 部分指令参数支持正则表达式
+- 单位
+  - 时间单位
+    - ms 毫秒
+    - s 秒
+    - m 分
+    - h 小时
+    - d 天
+    - w 周
+    - M 月/30天
+    - y 年/365天
+  - 空间单位
+    - 默认 bytes
+    - k/K 字节
+    - m/M 
+    - g/G
 ```
 http{
   gizp on;  采用gizp 压缩
@@ -129,21 +150,6 @@ http{
   
 } 
 ```
-
-**关于Nginx命令**
-- `nginx -s reload`  格式
-- `-?` `-h` 帮助命令
-- `-c` 指定配置文件
-- `-g` 指定配置指令
-- `-p` 指定运行目录
-- `-s` 发送信号
-  - `stop` 立刻停止
-  - `quit` 优雅停止
-  - `reload` 重载配置文件
-  - `reopen` 重新开始记录日志文件
-- `-t/-T` 测试配置文件是否有语法错误
-- `-v/-V` 打印nginx 的版本信息 编译信息
-
 
 
 **关于Nginx**
