@@ -1,5 +1,6 @@
 # Nginx搭建具有缓存能力的反向代理
 - `ngx_http_proxy_module`
+
 **nginx有哪些作用**
 - 反向代理
   - 代理接收请求，转发到上游服务器
