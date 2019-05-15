@@ -36,6 +36,26 @@ xhr.abort()
 - `overrideMimeType()` 重写MIME类型 决定XHR如何处理数据 在`send()`方法之前调用
 - `send(new FormData(data))` 格式化数据,XHR可以识别FromData实例,配置适当的头部信息
 
+**注**
+- 当使用Jquery的ajax上传文件时需设置`processData:false`,`contentType : false`
+  - `processData:false`  拒绝jQuery处理参数
+  - `contentType : false` 拒绝Jquery添加，使XHR自动识别
+  
+```javascript
+const formData = new FormData();
+formData.append('data','ceshi')
+
+$.ajax({
+    url:'https://jsonplaceholder.typicode.com/posts/',
+    type:'post',
+    data:formData,
+    processData:false,
+    contentType : false,
+    success:(res)=>{}
+})
+
+```
+
 **进度事件**
  - `loadstart` 接收到响应数据的第一个字节时触发
  - `progress` 周期性触发 包含进度 用作指示器
