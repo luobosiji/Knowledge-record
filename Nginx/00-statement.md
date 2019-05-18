@@ -11,6 +11,7 @@
 
 ## Nginx架构基础
 1. [Nginx进程&请求处理流程](https://github.com/luobosiji/blog/blob/master/Nginx/08-Nginx%E8%BF%9B%E7%A8%8B%26%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.md)
+2. [Nginx事件驱动](https://github.com/luobosiji/blog/blob/master/Nginx/09-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8.md)
 
 
 
