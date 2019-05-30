@@ -1,6 +1,6 @@
 # Vuex 状态管理
 ## 运行机制
-![运行机制](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vuex.png)
+![运行机制](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vue/Vuex.png)
 
 ## Vuex 使用
 1. `npm install vuex --save`

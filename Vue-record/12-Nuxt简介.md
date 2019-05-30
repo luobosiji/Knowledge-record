@@ -16,7 +16,7 @@
 
 **Nuxt原理**
 
-![Nuxt底层原理](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Nuxtsrc.png)
+![Nuxt底层原理](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vue/Nuxtsrc.png)
 
 
 

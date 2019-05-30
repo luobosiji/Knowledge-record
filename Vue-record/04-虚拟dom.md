@@ -15,7 +15,7 @@
 通过算法来比较 新旧Dom树 对比, 查找出要更新的节点 ,尽可能的复用Dom,提升我们的性能
 
 **同层节点比较(两棵树双向对比)**
- ![同层节点比较](https://raw.githubusercontent.com/luobosiji/blog/master/resources/tongcengcompare.png)
+ ![同层节点比较](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vue/tongcengcompare.png)
  - 同层不同组件改变顺序,是移动Dom
    -  B C D => C B D
 -  同层不同组件,改成上下层,是销毁在创建

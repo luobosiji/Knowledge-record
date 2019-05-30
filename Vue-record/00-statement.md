@@ -19,4 +19,4 @@
    3. [底层原理](https://github.com/luobosiji/blog/blob/master/Vue-record/11.3-vue-router%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86.md)
 
   >如果觉得有帮助,欢迎购买
-  ![vue-course](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vue-src.jpeg)
+  ![vue-course](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vue/Vue-src.jpeg)

@@ -57,11 +57,11 @@
    ```
 3. 原型模式(让所有对象实例共享原型对象中包含的属性和方法)
    - **理解原型**
-       ![原型](https://raw.githubusercontent.com/luobosiji/blog/master/resources/proto.png)
+       ![原型](https://raw.githubusercontent.com/luobosiji/blog/master/resources/JavaScript/proto.png)
      - 先访问实例中的属性和方法,没有则会去原型中找
      - 原型可以动态添加属性和方法`Person.prototype.name = 'name'`
      - **重写原型对象**会切断现有原型与任何之前已经存在的对象实例之间的联系
-       ![重写原型](https://raw.githubusercontent.com/luobosiji/blog/master/resources/rewriteproto.png)
+       ![重写原型](https://raw.githubusercontent.com/luobosiji/blog/master/resources/JavaScript/rewriteproto.png)
      - 通过原型可以修改原生对象的原型`String.prototype.newFun = function(){}`
      -  扩充类型的基础功能
        ```javascript
@@ -118,8 +118,8 @@
 >原型对象包含一个指向另一个原型对象的指针,另一个原型对象包含指向另一个构造函数的指针.\
 >另一个原型又是另一个对象的实例
 >层层递进 构成**原型链**
-![原型链](https://raw.githubusercontent.com/luobosiji/blog/master/resources/protoChain.png)
-![继承](https://raw.githubusercontent.com/luobosiji/blog/master/resources/inheritance.png)
+![原型链](https://raw.githubusercontent.com/luobosiji/blog/master/resources/JavaScript/protoChain.png)
+![继承](https://raw.githubusercontent.com/luobosiji/blog/master/resources/JavaScript/inheritance.png)
 - 问题一: 引用类型的值,所有实例共享一份
   - **函数只不过是在特定环境中执行代码的对象**
   - 解决方式: 借用构造函数 (通过apply() call() 在新创建的对象上执行构造函数)
