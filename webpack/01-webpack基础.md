@@ -22,10 +22,15 @@
 **配置文件**
 - 默认配置文件 webpack.config.js
 - 可通过 webpack --config 指定配置文件 可以用来区分代码执行环境
+  - webpack.dev.js 开发环境
+  - webpack.prod.js 生产环境
 - 使用laoder及plugins时 需要暗转对应依赖
   - `npm i style-loader css-loader -D`
   - `npm i less less-loader -D`
 ```javascript
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports ={
   entry:'./src/index.js', //单页应用 一个入口起点
   entry: { //多页应用 多个入口起点
@@ -34,14 +39,17 @@ module.exports ={
   },
   output:'./dist/main.js', //打包输出
   output: { //占位符 输出多文件
+    path: path.join(__dirname, 'dist'),
     filename: '[name].[hash].bundle.js'
   },
+  //development
   mode:'production', // 用来指定当前的构建环境，也可以使用webpack内置的函数设置
   module:{
     // 原生只支持 js、json 其它则通过loader处理 转化成有效模块
     // loader 本质是函数，接受源文件作为参数，返回转换结果
     rules:[ //loader 配置
       //test指定匹配规则，use指定使用loader名称
+      // raw-loader可以将文件作为字符串导入
       {test:/\.txt$/, use:'raw-loader'},
       // 使用babel-loader 解析ES6
       {test:/\.js$/, use:'babel-loader'},
@@ -49,16 +57,31 @@ module.exports ={
         'style-loader', //将样式通过<style>标签插入到head中
         'css-loader' //用于加载.css文件 并且转换成commonjs对象
       ]},
+      // loader执行是从后往前
       {test:/\.less$/, use:[
         'style-loader', 
         'css-loader',
         'less-loader' //将less 转换成css
-      ]}
+      ]},
+      //url-loader 类似于 file-loader 可以处理图片和字体，当如果文件小于字节限制limit 则自动base64，可以返回DataURL
+      {
+        test:/\.(png|svg|jgp|gif)$/, 
+        use:[
+          loader:'url-loader',
+          options:{
+            limit:10240,
+            //当超出limit限制 则使用的备用加载程序 默认：'file-loader'
+            fallback: 'responsive-loader'}
+          ]
+      },
+      //file-loader 可以处理图片和字体，
+      {test:/\.(png|svg|jgp|gif)$/, use:['file-loader']},
+      {test:/\.(woff|woff2|eot|ttf|otf)$/, use:['file-loader']}
     ]
   },
   // 用于bundle文件的优化，资源管理和环境变量注入，作用域整个构建过程
   plugins:[ //插件配置
-    new HtmlwebpackPlugin({
+    new HtmlwebpackPlugin({ //自动创建html去承载生成的js
       template:'./src/index.html'
     })
   ]
