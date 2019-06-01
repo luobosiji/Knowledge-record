@@ -26,5 +26,5 @@
 - **软件架构师**主要解决功能复杂性问题
 - **服务端架构师**要解决高流量、高并发问题
 
-![前端知识架构](https://github.com/luobosiji/blog/blob/master/resources/knowledgeSystem/knowledgeSystem.png)
+![前端知识架构](https://raw.githubusercontent.com/luobosiji/blog/master/resources/knowledgeSystem/knowledgeSystem.png)
 
