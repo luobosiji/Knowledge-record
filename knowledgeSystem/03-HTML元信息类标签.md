@@ -22,10 +22,13 @@
 
 ## 补充
 **http-equiv的命令**
-![http-equiv的命令](https://github.com/luobosiji/blog/blob/master/resources/knowledgeSystem/http-equiv.png)
+
+![http-equiv的命令](https://raw.githubusercontent.com/luobosiji/blog/master/resources/knowledgeSystem/http-equiv.png)
 
 **viewport属性**
-![viewport属性](https://github.com/luobosiji/blog/blob/master/resources/knowledgeSystem/viewport.png)
+
+![viewport属性](https://raw.githubusercontent.com/luobosiji/blog/master/resources/knowledgeSystem/viewport.png)
 
 **其它预定义meta**
-![其它预定义meta](https://github.com/luobosiji/blog/blob/master/resources/knowledgeSystem/other.png)
+
+![其它预定义meta](https://raw.githubusercontent.com/luobosiji/blog/master/resources/knowledgeSystem/other.png)
