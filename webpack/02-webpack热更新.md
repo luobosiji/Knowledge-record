@@ -9,7 +9,7 @@
   - 在配置`webpack.config.js`中设置 `watch:true`
 - 文件监听原理
   - 轮询判断文件的最后编辑时间是否变化
-  - 某个文件法神改了变化，并不会立刻告诉监听者，而是先缓存起来，等aggregateTimeout
+  - 某个文件发生了变化，并不会立刻告诉监听者，而是先缓存起来，等aggregateTimeout
 ```javaScript
 module.export = {
   // 默认为false

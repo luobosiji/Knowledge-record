@@ -31,6 +31,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports ={
   entry:'./src/index.js', //单页应用 一个入口起点
   entry: { //多页应用 多个入口起点
@@ -71,7 +72,7 @@ module.exports ={
           options:{
             limit:10240,
             //当超出limit限制 则使用的备用加载程序 默认：'file-loader'
-            fallback: 'responsive-loader'}
+            fallback: 'file-loader'}
           ]
       },
       //file-loader 可以处理图片和字体，
@@ -79,11 +80,16 @@ module.exports ={
       {test:/\.(woff|woff2|eot|ttf|otf)$/, use:['file-loader']}
     ]
   },
-  // 用于bundle文件的优化，资源管理和环境变量注入，作用域整个构建过程
+  // 用于bundle文件的优化，资源管理和环境变量注入，作用于整个构建过程
   plugins:[ //插件配置
     new HtmlwebpackPlugin({ //自动创建html去承载生成的js
       template:'./src/index.html'
-    })
+    }),
+    // 这里在编译之前先删除dist文件夹
+    // 默认删除output指定的输出目录
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['./dist']
+    }),
   ]
 }
 ```
