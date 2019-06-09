@@ -23,7 +23,7 @@ module.export = {
 }
 ```
 **热更新 webpack-dev-server**
-- `webpack-dev-server --open`
+- `webpack-dev-server --open` open是自动打开浏览器
 - 不需要手动刷新浏览器
 - 不输出文件，而是放在内存中
 - 使用`HotModuleReplacementPlugin`插件
