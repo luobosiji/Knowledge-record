@@ -2,6 +2,12 @@
 >建立自己的知识体系
 
 
+- [JavaScript类型](https://github.com/luobosiji/blog/blob/master/knowledgeSystem/01-JavaScript%E7%B1%BB%E5%9E%8B.md)
+- [浏览器是如何工作的](https://github.com/luobosiji/blog/blob/master/knowledgeSystem/02-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.md)
+- [HTML元信息类标签](https://github.com/luobosiji/blog/blob/master/knowledgeSystem/03-HTML%E5%85%83%E4%BF%A1%E6%81%AF%E7%B1%BB%E6%A0%87%E7%AD%BE.md)
+- [setTimeout&Promise执行顺序](https://github.com/luobosiji/blog/blob/master/knowledgeSystem/04-setTimeout%26Promise%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F.md)
+- [other](https://github.com/luobosiji/blog/blob/master/knowledgeSystem/05-other.md)
+
 ### 前端需要具备的能力
 - 编程能力
   - 用代码解决问题的能力，编程能力越强，就能解决越复杂的问题
