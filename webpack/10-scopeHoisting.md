@@ -1,0 +1,18 @@
+# scope Hoisting
+- 不使用scope Hoisting默认情况下
+  - 构建后会生成大量函数闭包包裹代码，导致体积增大
+  - 运行代码时创建的函数作用域变大，内存开销变大
+  - 分析webpack的模块机制
+    - 被webpack转换后的模块会带上一层包裹（是一个IIFE匿名闭包）
+      - import会转换成 __webpack_require 加载模块
+      - export会转换成 __webpack_exports  返回
+      - modules是一个数组，每一项是模块初始化函数
+      - 通过 webpack_require_(0) 来启动程序
+- scope Hoisting 原理
+  - 将所有模块代码按照引用顺序放在一个函数作用域里，然后适当的重命名一些变量以防止变量名冲突
+  - 可以减少函数声明代码和内存开销
+- 使用
+  - webpack mode:production 默认开启
+  - 必须是ES6语法，CJS不支持 
+  - webpack3需要引入插件
+    - webpack.optimize.ModuleConcatenationPlugin()
