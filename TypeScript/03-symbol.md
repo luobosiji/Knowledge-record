@@ -85,7 +85,7 @@ console.log(a); // [2, 3, 4]
 console.log(a instanceof C); // false
 console.log(a instanceof Array); // true
 console.log(a.getName()); // error a.getName is not a function
-// 这时 a不是c的实例 所有访问不到 getName方法
+// 这时 a不是c的实例 所以访问不到 getName方法
 ```
 - Symbol.match
 - Symbol.replace
