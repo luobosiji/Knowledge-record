@@ -17,7 +17,15 @@
   - 受控组件：表单元素状态由使用者维护
   - 非受控组件：表单元素状态DOM自身维护
 
-
+# Virtual DOM
+>UI以虚拟的表现形式保存于内存中，并通过ReactDom使之与真实的DOM同步
+- diff算法
+  - 时间复杂度 O(n)
+  - 从根节点开始进行同层比较
+    - 同层交换
+    - 跨层（先删除，在创建）
+  - key属性提高性能
+    - 帮助React识别哪些元素改变了
 
 
 **开发版本的CDN**
@@ -44,6 +52,12 @@ npx babel --watch src --out-dir . --presets react-app/prod
 
 # 创建单页应用的最佳方式
 > Node >= 6 和 npm >= 5.2
+
 npx create-react-app my-app
 cd my-app
 npm start
+
+## 快速创建项目的三种方式
+- create React App
+- Rekit
+- Codesandbox （在线创建，不需要搭建环境）
