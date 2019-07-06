@@ -1,4 +1,5 @@
 # money brings money
+- Money never sleep 停滞是对金钱最大的浪费
 
 - [为什么要理财？](https://github.com/luobosiji/blog/blob/master/money/01-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%90%86%E8%B4%A2.md)
 - [长期投资](https://github.com/luobosiji/blog/blob/master/money/%E4%B8%94%E6%85%A2/02-%E9%95%BF%E6%9C%9F%E6%8A%95%E8%B5%84.md)
