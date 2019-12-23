@@ -17,6 +17,9 @@
   - `nrm add xxx http://xxx` 添加源
   - `nrm use xxx` 使用对应源
   - `nrm ls` 列出所有源
+- 安装webpack
+  - `npm install --save-dev webpack`
+  - `npm install --save-dev webpack-cli`
 
 
 **配置文件**
