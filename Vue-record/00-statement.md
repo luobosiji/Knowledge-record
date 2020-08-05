@@ -20,3 +20,7 @@
 
   >如果觉得有帮助,欢迎购买
   ![vue-course](https://raw.githubusercontent.com/luobosiji/blog/master/resources/Vue/Vue-src.jpeg)
+
+
+  resize-detector 监听屏幕变化
+  lodash/debounce 防抖
