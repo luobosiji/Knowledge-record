@@ -20,6 +20,13 @@
 - 安装webpack
   - `npm install --save-dev webpack`
   - `npm install --save-dev webpack-cli`
+- 查看npm配置
+  - `npm config list`
+  - `npm config ls -l` 查看所有配置
+- `npm link`
+  - npm-link-module会根据package.json上的配置，被链接到全局，路径是{prefix}/lib/node_modules/<package>，
+  - 我们可以使用`npm config get prefix`命令获取到prefix的值
+
 
 
 **配置文件**
